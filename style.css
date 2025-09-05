@@ -1,0 +1,130 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background and layout */
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c3ecf7, #f5d6e0);
+}
+
+/* Container styling */
+.container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Form layout */
+.form {
+  margin: 2rem 0 1rem 0;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Button styling */
+form button {
+  background-color: #ff6fa1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e85c8e;
+}
+
+/* Dropdown section */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Select container with image and label */
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 8rem;
+  height: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+
+.select-container:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.select-container img {
+  max-width: 2rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.select-container span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Icon between dropdowns */
+.dropdown i {
+  font-size: 1.5rem;
+  color: #ff6fa1;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+/* Message styling */
+.msg {
+  margin: 2rem 0;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
